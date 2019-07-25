@@ -307,6 +307,11 @@ WindowHandle WindowBase::getSystemHandle() const
     return m_impl ? m_impl->getSystemHandle() : 0;
 }
 
+WindowConnection WindowBase::getSystemConnection() const
+{
+    return m_impl ? m_impl->getSystemConnection() : 0;
+}
+
 
 ////////////////////////////////////////////////////////////
 void WindowBase::onCreate()

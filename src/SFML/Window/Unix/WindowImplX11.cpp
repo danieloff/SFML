@@ -800,6 +800,12 @@ WindowHandle WindowImplX11::getSystemHandle() const
     return m_window;
 }
 
+////////////////////////////////////////////////////////////
+WindowConnection WindowImplX11::getSystemConnection() const
+{
+    return m_display;
+}
+
 
 ////////////////////////////////////////////////////////////
 void WindowImplX11::processEvents()

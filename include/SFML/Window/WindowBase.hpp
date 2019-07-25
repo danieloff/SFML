@@ -393,6 +393,19 @@ public:
     ////////////////////////////////////////////////////////////
     WindowHandle getSystemHandle() const;
 
+    ////////////////////////////////////////////////////////////
+    /// \brief Get the OS-specific connection handle of the window
+    ///
+    /// The type of the returned handle is sf::WindowConnection,
+    /// which is a typedef to the handle type defined by the OS.
+    /// You shouldn't need to use this function, unless you have
+    /// very specific stuff to implement that SFML doesn't support,
+    /// or implement a temporary workaround until a bug is fixed.
+    ///
+    /// \return System handle of the window
+    ///
+    ////////////////////////////////////////////////////////////
+    WindowConnection getSystemConnection() const;
 protected:
 
     ////////////////////////////////////////////////////////////

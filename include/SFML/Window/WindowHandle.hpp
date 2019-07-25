@@ -47,6 +47,8 @@ namespace sf
     // Window handle is Window (unsigned long) on Unix - X11
     typedef unsigned long WindowHandle;
 
+    typedef void* WindowConnection;
+
 #elif defined(SFML_SYSTEM_MACOS)
 
     // Window handle is NSWindow or NSView (void*) on Mac OS X - Cocoa

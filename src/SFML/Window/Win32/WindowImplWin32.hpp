@@ -80,6 +80,14 @@ public:
     virtual WindowHandle getSystemHandle() const;
 
     ////////////////////////////////////////////////////////////
+    /// \brief Get the OS-specific connection handle of the window
+    ///
+    /// \return Handle of the window
+    ///
+    ////////////////////////////////////////////////////////////
+    virtual WindowConnection getSystemConnection() const;
+
+    ////////////////////////////////////////////////////////////
     /// \brief Get the position of the window
     ///
     /// \return Position of the window, in pixels

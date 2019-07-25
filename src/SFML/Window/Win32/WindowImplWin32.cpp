@@ -288,6 +288,11 @@ WindowHandle WindowImplWin32::getSystemHandle() const
     return m_handle;
 }
 
+WindowConnection WindowImplWin32::getSystemConnection() const
+{
+    return GetModuleHandleW(NULL);
+}
+
 
 ////////////////////////////////////////////////////////////
 void WindowImplWin32::processEvents()
